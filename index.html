@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaimaa Nouassi | Web Designer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif
+        }
+
+        body {
+            background: #ffffff;
+            color: #111;
+            line-height: 1.6;
+            scroll-behavior: smooth
+        }
+
+        section {
+            padding: 100px 20px;
+            max-width: 1100px;
+            margin: auto
+        }
+
+        h1,
+        h2 {
+            margin-bottom: 20px
+        }
+
+        /* Gradient Background Sections */
+        .hero {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: #fff;
+            text-align: center;
+            padding-top: 140px
+        }
+
+        .services-section {
+            background: #f8fafc
+        }
+
+        .why-section {
+            background: linear-gradient(135deg, #ecfeff, #f0fdf4)
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 14px;
+            margin: 8px;
+            transition: 0.3s
+        }
+
+        .btn-primary {
+            background: #22c55e;
+            color: #fff
+        }
+
+        .btn-primary:hover {
+            background: #16a34a;
+            transform: translateY(-3px)
+        }
+
+        .btn-secondary {
+            border: 1px solid #fff;
+            color: #fff
+        }
+
+        .btn-secondary:hover {
+            background: #fff;
+            color: #111
+        }
+
+        .services,
+        .why {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px
+        }
+
+        .card {
+            padding: 25px;
+            border-radius: 12px;
+            background: #fff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: 0.4s
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1)
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #111;
+            color: #fff
+        }
+
+        /* Floating WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            width: 55px;
+            height: 55px;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            animation: float 2s infinite
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px)
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0)
+            }
+
+            50% {
+                transform: translateY(-8px)
+            }
+
+            100% {
+                transform: translateY(0)
+            }
+        }
+
+        .reveal {
+            opacity: 0;
+            animation: fadeInUp 1s forwards
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="hero">
+        <h1 class="reveal">Build Your Online Store with Confidence</h1>
+        <p class="reveal">Modern WordPress & WooCommerce websites that grow your business.</p>
+        <a href="https://wa.me/212633775866" class="btn btn-primary">WhatsApp Me</a>
+        <a href="mailto:chaimaenouassi24@gmail.com" class="btn btn-secondary">Email Me</a>
+    </section>
+
+    <section>
+        <h2 class="reveal">About Me</h2>
+        <p class="reveal">Hi, I’m Chaimaa Nouassi. I create clean, modern websites using WordPress and WooCommerce. I
+            help businesses build powerful online stores designed to convert visitors into customers.</p>
+    </section>
+
+    <section class="services-section">
+        <h2 class="reveal">My Services</h2>
+        <div class="services">
+            <div class="card reveal">
+                <h3>WordPress Websites</h3>
+                <p>Modern and responsive design.</p>
+            </div>
+            <div class="card reveal">
+                <h3>WooCommerce Stores</h3>
+                <p>Full online store setup.</p>
+            </div>
+            <div class="card reveal">
+                <h3>Optimization</h3>
+                <p>Improve performance and sales.</p>
+            </div>
+            <div class="card reveal">
+                <h3>Customization</h3>
+                <p>Tailored to your needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="reveal">Portfolio</h2>
+        <p class="reveal">Projects coming soon.</p>
+    </section>
+
+    <section class="why-section">
+        <h2 class="reveal">Why Work With Me?</h2>
+        <div class="why">
+            <div class="card reveal">Modern Design</div>
+            <div class="card reveal">Fast Delivery</div>
+            <div class="card reveal">Easy Communication</div>
+            <div class="card reveal">Results Focused</div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="reveal">Contact</h2>
+        <p class="reveal">Email: chaimaenouassi24@gmail.com</p>
+        <p class="reveal">WhatsApp: 0633775866</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Chaimaa Nouassi</p>
+    </footer>
+
+    <a href="https://wa.me/212633775866?text=Hello%20Chaimaa,%20I'm%20interested%20in%20your%20services"
+        class="whatsapp-float">💬</a>
+
+    <script>
+        // Reveal on scroll
+        const reveals = document.querySelectorAll('.reveal');
+        window.addEventListener('scroll', () => {
+            const trigger = window.innerHeight * 0.85;
+            reveals.forEach(el => {
+                const top = el.getBoundingClientRect().top;
+                if (top < trigger) { el.style.opacity = 1; el.style.animation = 'fadeInUp 1s forwards'; }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
